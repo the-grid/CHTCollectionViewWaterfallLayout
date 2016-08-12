@@ -122,7 +122,7 @@ public class CHTCollectionViewWaterfallLayout : UICollectionViewLayout{
         }
     }
     
-    func itemWidthInSectionAtIndex (section : NSInteger) -> CGFloat {
+    public func itemWidthInSectionAtIndex (section : NSInteger) -> CGFloat {
         var insets : UIEdgeInsets
         if let sectionInsets = self.delegate?.collectionView?(self.collectionView!, layout: self, insetForSectionAtIndex: section){
             insets = sectionInsets
